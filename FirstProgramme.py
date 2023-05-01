@@ -1,10 +1,21 @@
-name="Tony Stark"
-print(name.upper())
-print(name.lower())
-print(name.find('S'))
-print(name.find('k'))
-print(name.find('Tony'))
-print(name.replace("Tony Stark","Ironman"))
-print(name)
-print("T" in name+"in Tony Stark")
-print("iron" in name+"in Tony Stark")
+#arithmatic oprator
+print(5+2)
+print(5-2)
+print(5*2)
+print(5/2)
+print(5%2)
+print(5**2)
+print(5//2)
+#assign value in variable
+i=5
+
+i=i+5
+print(i)
+i+=2
+print(i)
+i-= 2
+print(i)
+i*= 2
+print(i)
+result=(2+3)*5
+print(result)
