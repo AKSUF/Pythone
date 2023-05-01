@@ -1,10 +1,2 @@
-name="Abu"
-age=22
-name="Khusboo"
-firstName="Rehnumaye"
-lastName="Azima"
-fullName=firstName+lastName;
-age=23
-is_adult=True
-print(fullName)
-print(name)
+name=input ("What is your name?")
+print("Hello"+name)
