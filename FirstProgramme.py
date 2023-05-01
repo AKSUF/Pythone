@@ -1,12 +1,10 @@
-old_age=input("enter your old age:")
-
-new_age=int(old_age)+2
-print(new_age)
-number=18
-print(float(number))
-
-first=input("enter first number:")
-second=input("enter second number:")
-sum=int(first)+int(second)
-print(sum)
-print("the sum is"+str(sum))
+name="Tony Stark"
+print(name.upper())
+print(name.lower())
+print(name.find('S'))
+print(name.find('k'))
+print(name.find('Tony'))
+print(name.replace("Tony Stark","Ironman"))
+print(name)
+print("T" in name+"in Tony Stark")
+print("iron" in name+"in Tony Stark")
