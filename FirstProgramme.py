@@ -1,21 +1,18 @@
-#arithmatic oprator
-print(5+2)
-print(5-2)
-print(5*2)
-print(5/2)
-print(5%2)
-print(5**2)
-print(5//2)
-#assign value in variable
-i=5
+#comparision operator
+print(3<2)
+print(2>3)
+print(3<=2)
+print(2>=3)
+print(3==2)
+print(3==3)
+print(3!=2)
+#or operator
+print(2>3 or 2>1)
+#and operator
+print(2>3 and 2>1)
+#not operator
+print(not 2>3)
 
-i=i+5
-print(i)
-i+=2
-print(i)
-i-= 2
-print(i)
-i*= 2
-print(i)
-result=(2+3)*5
-print(result)
+
+
+
