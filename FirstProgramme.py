@@ -1,14 +1,19 @@
-age =1
-#age =17
-if age>=18:
-    print("you are an adult")
-    print("you can vot")
-elif age<18 and age>3:
-    print("you are in school")
-else:
-    print("you are a child")
+numbers=range(5)
+print(numbers)
+#while loop
+# i=1
+# while i<=10:
+#     print(i*"*")
+#     i=i+1
+# while i>=0:
+#     print(i*"*")
+#     i=i-1
 
-print("thank you")
+#for loop
+for i in range(5):
+    print(i)
+
+
 
 
 
