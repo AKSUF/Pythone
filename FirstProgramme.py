@@ -1,9 +1,9 @@
-#Dictionary
-marks={"english":96,"chemistry":98}
-print(marks["chemistry"])
-print(marks)
-marks["chemistry"]=99
-print(marks)
+import math
+from math import *
+print(sqrt(16))
+print(dir(math))
+
+
 
 
 
