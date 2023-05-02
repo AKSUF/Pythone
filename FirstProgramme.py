@@ -1,13 +1,6 @@
-students=["ram","shyam","kishan","radha","radhika"]
-
-# for students in students:
-#     if students=="radha":
-#         break;
-#     print(students)
-for students in students:
-    if students=="kishan":
-        continue;
-    print(students)
+marks=(95,98,97,97,97)
+print(marks.count(97))
+print(marks.index(97))
 
 
 
