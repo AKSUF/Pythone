@@ -1,10 +1,9 @@
-#[]-list,()-tupple,{}-Set
-person="ram","shyam","abbhi"
-print(person)
-marks={95,98,97,97,97}
+#Dictionary
+marks={"english":96,"chemistry":98}
+print(marks["chemistry"])
 print(marks)
-for score in marks:
-    print(score)
+marks["chemistry"]=99
+print(marks)
 
 
 
