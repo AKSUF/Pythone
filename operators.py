@@ -1,83 +1,101 @@
-# fruits=["apple","banana","cherry"]
-# x,y,z=fruits
+# x=1
+# y=7575757
+# z=-5665555545
+# print(type(x))
+# print(type(y))
+# print(type(z))
+#
+
+# x=1.10
+# y=1.0
+# z=-35.59
+# print(type(x))
+# print(type(y))
+# print(type(z))
+
+# x=35e3
+# y=12E4
+# z=-87.7e100
+# print(type(x))
+# print(type(y))
+# print(type(z))
+# #complex
+# x = 3+5j
+# y = 5j
+# z = -5j
 # print(x)
 # print(y)
 # print(z)
-# #ghghfghffg
-# my_tuple = (1, 2, 3)
-#
-# x, y, z = my_tuple
-#
-# print(type(x))   # 1
-# print(y)   # 2
-# print(z)   # 3
-# #unpacking
-# my_string = "Hello"
-#
-# a, b, c, d, e = my_string
-#
-# print(a)   # H
-# print(b)   # e
-# print(c)   # l
-# print(d)   # l
-# print(e)   # o
-#
-# my_hello="Khusboo"
-# a,b,c,d,e,f,g=my_hello
-# print(a)
-# print(b)
+
+# x=1+78
+# y=2.8
+# z=1j
+# #convert from int to float
+# a=float(x)
+# c=complex(x)
 # print(c)
-# print(d)
-# print(e)
-# print(f)
-# print(g)
-
-
-# my_list=[1,2,3,4,5]
-# x,y,*rest=my_list
-# print(x)
-# print(y)
-# print(rest*5)
 #
-# x="awesome"
-# def myfunc():
-#     print("Pythone is"+x)
 #
-# myfunc()
-
-
-# x = 10
+# z1 = 2 + 3j
+# z2 = 4 + 5j
 #
-# def mufunc():
-#     global x
-#     x += 5
-#     print(x)
+# # Addition
+# z3 = z1 + z2
+# print(z3)   # Output: (6+8j)
 #
-# mufunc()
-
-# def myfunc():
+# # Subtraction
+# z4 = z2 - z1
+# print(z4)   # Output: (2+2j)
 #
-#    global x
-#    x -=5
-#    print(x)
-
-# def greet(name):
-#     print("Hello"+name)
-# greet("Abu")
-# greet("Sufian")
+# # Multiplication
+# z5 = z1 * z2
+# print(z5)   # Output: (-7+22j)
 #
+# # Division
+# z6 = z2 / z1
+# print(z6)   # Output: (2.2+0.4j)
 
-# def square(x):
-#     return x**2
-# result=square(5)
-# print(result)
+# import random
+# print(random.randrange(1,10))
 
-x="awesome"
-def myfunc():
-    global x
-    x="fantastic"
-myfunc()
-print("Pythone is"+x)
+import random
+mylist = ["apple", "banana", "cherry", "durian"]
+print(random.choice(mylist))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
