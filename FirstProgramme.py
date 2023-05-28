@@ -1,32 +1,32 @@
-# from numpy import *
-# arr=array([1,2,3,4,5])
-# arr=arr+5
-# print(arr)
-
 from numpy import *
-arr1=array([1,2,3,4,5])
-# arr2=array([1,2,3,4,5])
+arr1=array([
+    [1,2,3,4,5,6],
+    [4,5,6,7,8,9]
+])
+# #to make 2d array to 3d array
+# arr2=arr1.flatten()
+# #make dimensional array
+# arr3=arr1.reshape(3,4)
+# print(arr3)
+# print(arr2)
+# print(arr1.ndim)
+# print(arr1.dtype)
+# print(arr1.shape)
+# print(arr1.size)
 
-#to create new array
-# arr2=arr1.view()
-#deep copy
-arr2=arr1.copy()
-#shallow copy
-arr1[1]=7
+n1=matrix('1 2 3; 6 5 6;7 8 9')
+n2=matrix('1 2 3; 6 5 6;7 8 9')
+m=matrix(arr1)
+# print(m)
+# print(n)
+# print(diagonal(n))
+n3=n1*n2
+n4=n1+n2
+print(n3)
+# print(n4)
 
-#vectorized opration
-arr3=arr1+arr2
-arr2=arr2.view()
-print(arr1)
-print(arr2)
-# concatenated = concatenate((arr1, arr2))
-# print(cos(arr3))
-# print(sin(arr3))
-# print(log(arr3))
-# print(sqrt(arr3))
-# print(sum(arr3))
-# print(min(arr3))
-# print(max(arr3))
-# print(concatenated)
-print(id(arr1))
-print(id(arr2))
+
+
+
+
+
