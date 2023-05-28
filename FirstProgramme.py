@@ -1,6 +1,7 @@
-def person(name,**data):
-    # print(name)
-    # print(data)
-    for i,j in data.items():
-        print(i,j)
-person("navin",age=28,city="Mumbai",mob=9989888877)
+a=10
+def something():
+    global a
+    a=15
+    print("in fun",a)
+something()
+print("outside",a)
