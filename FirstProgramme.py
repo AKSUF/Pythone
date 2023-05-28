@@ -1,29 +1,21 @@
-from numpy import *
-# def update(x):
-#     print(id(x))
-#     x = 8
-#     print(x)
-#     print(id(x))
-#     return x
+# def person(name,age):
+#     print(name)
+#     print(age-5)
+# # person('navin',67)
+# person(age=28,name="navin")
+
 #
-# a = 10
-# update(a)
-# print(a)
-# print(id(a))
+# def person(name,age=18):
+#     print(name)
+#     print(age)
+# # person('navin',67)
+# person("navin",28)
 
 
-from numpy import *
-def update(lst):
-    print(id(lst))
-    lst[1]=25
-    print(lst)
-    print(id(lst))
-    return lst
+#//////////////////////
+import numpy as np
+def sum(a, *b):
+    c = np.sum((a, *b))
+    print(c)
 
-lst=[10,20,30]
-print(lst)
-update(lst)
-print(lst)
-print(id(lst))
-
-
+sum(5, 6, 8, 9)
