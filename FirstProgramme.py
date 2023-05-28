@@ -1,17 +1,29 @@
 from numpy import *
-def great():
-    print("Hello")
-    print("Good morning")
-great()
-def add(x,y):
-    c=x+y
-    d=x-y
-    return c,d
-result1,result2=add(5,4)
-# result=add(5,4)
-# print(result)
-print(result1,result2)
+# def update(x):
+#     print(id(x))
+#     x = 8
+#     print(x)
+#     print(id(x))
+#     return x
+#
+# a = 10
+# update(a)
+# print(a)
+# print(id(a))
 
 
+from numpy import *
+def update(lst):
+    print(id(lst))
+    lst[1]=25
+    print(lst)
+    print(id(lst))
+    return lst
+
+lst=[10,20,30]
+print(lst)
+update(lst)
+print(lst)
+print(id(lst))
 
 
