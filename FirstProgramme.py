@@ -1,19 +1,6 @@
-# def div(a,b):
-#     if a<b:
-#         a,b=b,a
-#     print(a/b)
-# div(2,4)
-
-def div(a, b):
-    print(a / b)
-# //decorators
-def smart_div(func):
-    def inner(a, b):
-        if a < b:
-            a, b = b, a
-        return func(a, b)
-    return inner
-
-div1 = smart_div(div)
-div1(2, 4)
-
+import Calc
+from Calc import *
+a=9
+b=7
+c=Calc.add(a,b)
+print(c)
