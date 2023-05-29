@@ -4,26 +4,32 @@
 # print(next(it))
 # for i in nums:
 #     print(i)
-class Topten:
-    def __init__(self):
-        self.num = 1
-
-    def __iter__(self):
-        return self
-
-    def __next__(self):
-        if self.num <= 10:
-            val = self.num
-            self.num += 1
-            return val
-        else:
-            raise StopIteration
 
 
-values = Topten()
 
+# def topten():
+#     yield 5
+#     yield 10
+#     yield 15
+#
+# values = topten()
+#
+# print(values.__next__())  # Prints 5
+# print(values.__next__())  # Prints 10
+#
+# for i in values:
+#     print(i)  # Prints 15
+
+
+def topten():
+    n=1
+    while n<=10:
+        sq=n*n
+        yield  sq
+        n+=1
+values=topten()
 for i in values:
     print(i)
 
-# print(values.__next__())
-# print(values.__next__())
+
+
