@@ -1,39 +1,36 @@
 class A:
+    def __init__(self):
+        print("in A init")
+
     def features1(self):
-        print("Features 1 working")
+        print("Features 1A working")
+
     def features2(self):
-        print("Features 2 working")
+        print("Features 2B working")
+
+
 class B(A):
+    def __init__(self):
+        super().__init__()
+        print("in B init")
+
     def feature3(self):
-        print("Feature 3 working")
+        print("Feature 3B working")
+
     def feature4(self):
-        print("Feature 4 working")
-class C(B):
-    def features5(self):
-        print("Features 5 is working")
+        print("Feature 4B working")
 
-    def features6(self):
-        print("Features 6 is working")
 
-class D:
-    def features7(self):
-        print("Features 7 working")
-    def features8(self):
-        print("Features 8 working")
+class C(B, A):
+    def __init__(self):
+        super().__init__()  # Call B's __init__ method
+        A.__init__(self)  # Call A's __init__ method
+        print("in C init")
+    def feat(self):
+        super().features2()
 
-class E(A,D):
-    def features9(self):
-        print("Features 9 working")
 
-    def features10(self):
-        print("Features 10 working")
-a1=A()
-a1.features1()
-a1.features2()
-b1=B()
-b1.features1()
-b1.features2()
-c1=C()
+c1 = C()
 c1.features1()
-e1=E()
-e1.features1()
+c1.feat()
+
