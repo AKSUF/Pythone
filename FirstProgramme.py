@@ -1,15 +1,17 @@
-class Car:
-    # //class variable
-    wheels=4
+class Student:
+    school="Telusko"
+    def __init__(self,m1,m2,m3):
+        self.m1=m1
+        self.m2=m2
+        self.m3=m3
+    def avg(self):
+        return (self.m1+self.m2+self.m3)/3
+    def get_m1(self):
+        return self.m1
+    def set_m1(self):
+        return self.m1
 
-    def __init__(self):
-        # instance variable
-        self.mil=10
-        self.com="BMW"
-c1=Car()
-c2=Car()
-c1.mil=8
-# //class variable
-Car.wheels=5
-print(c1.com,c1.mil,c1.wheels)
-print(c2.com,c2.mil,c2.wheels)
+s1=Student(34,45,23)
+s2=Student(34,23,50)
+print(s1.avg())
+print(s2.avg())
