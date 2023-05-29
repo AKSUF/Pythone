@@ -1,35 +1,19 @@
-# nums=[7,8,9,5]
-# it=iter(nums)
-# print(it.__next__())
-# print(next(it))
-# for i in nums:
-#     print(i)
+a=0
+b=2
+try:
+  print("resource open")
+  print(a/b)
+  k=int(input("Enter a number"))
+  print(k)
+except ZeroDivisionError as e:
+    print("Hey,you can not divide a number")
+except ValueError as e:
+    print("Invalid input")
+except Exception as e:
+  print("Hey ,you can not divide a Number by Zero",e)
+finally:
+    print("resource closed")
 
-
-
-# def topten():
-#     yield 5
-#     yield 10
-#     yield 15
-#
-# values = topten()
-#
-# print(values.__next__())  # Prints 5
-# print(values.__next__())  # Prints 10
-#
-# for i in values:
-#     print(i)  # Prints 15
-
-
-def topten():
-    n=1
-    while n<=10:
-        sq=n*n
-        yield  sq
-        n+=1
-values=topten()
-for i in values:
-    print(i)
 
 
 
