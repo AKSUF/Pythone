@@ -1,7 +1,11 @@
-
+from FirstProgramme import  add
+def fun1():
+    add()
+    print("from fun1")
+def fun2():
+    print("from fun2")
 def main():
-    print("Hello")
-    print("Welcome User")
+   fun1()
+   fun2()
 
-if __name__=="_main_":
- main()
+main()
