@@ -1,25 +1,11 @@
-def calculate_fan_consumption(power_rating,operating_hours,electricity_rate):
-   energy_consumed=power_rating*operating_hours
-   energy_consumed_kWh=energy_consumed/1000
-   cost_of_electricity=energy_consumed_kWh*electricity_rate
-   return energy_consumed,energy_consumed_kWh,cost_of_electricity
+def calculate_average_temperature(temperatures):
+    total_temperature = sum(temperatures)
+    num_readings = len(temperatures)
+    average_temperature = total_temperature / num_readings
+    return average_temperature
 
-fans=[
- {"name":"Fan 1","power_rating":60,"operating_hours":8},
- {"name": "Fan 2", "power_rating": 75, "operating_hours": 6},
- {"name": "Fan 3", "power_rating": 90, "operating_hours": 10}
-]
+river_temperatures = [12.5, 13.2, 14.8, 15.6, 13.9, 12.1, 11.8, 14.3]
+average_temp = calculate_average_temperature(river_temperatures)
 
-electricity_rate=0.12
-for fan in fans:
-    fan_power_rating=fan["power_rating"]
-    operating_hours=fan["operating_hours"]
-
-    energy_consumed,energy_consumed_kWh,cost_of_electricity=calculate_fan_consumption(fan_power_rating,operating_hours,electricity_rate)
-
-    print("Fan",fan["name"])
-    print("Energy Consumed:{}watt-hours".format(energy_consumed))
-    print("Energy Consumed:{}kilowat-hours".format(energy_consumed_kWh))
-    print("Cost of Electricity:$(.2f)".format(cost_of_electricity))
-
-
+# Display the average temperature
+print("Average River Temperature: {:.2f} degrees".format(average_temp))
