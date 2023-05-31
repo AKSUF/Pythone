@@ -1,11 +1,24 @@
-def fibonacci(n):
-    fib_series=[0,1]
-    for i in range(2,n):
-        next_term=fib_series[i-1]+fib_series[i-2]
-        fib_series.append(next_term)
-    return fib_series
-num_terms=10
-fibonacci_series=fibonacci(num_terms)
-print("Fibonacci series up to",num_terms,"terms:")
-for term in fibonacci_series:
-    print(term)
+def count_words(text):
+    word_counts = {}
+
+    # Split the text into words
+    words = text.split()
+
+    # Count the frequency of each word
+    for word in words:
+        if word in word_counts:
+            word_counts[word] += 1
+        else:
+            word_counts[word] = 1
+
+    return word_counts
+
+
+# Example usage
+text = "This is a sample text to demonstrate word count. This text contains several words, and some words may repeat."
+
+word_counts = count_words(text)
+
+print("Word counts:")
+for word, count in word_counts.items():
+    print(word, ":", count)
