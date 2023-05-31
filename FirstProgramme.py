@@ -1,27 +1,20 @@
-def analyze_text(text):
-    words=text.split()
-    total_words=len(words)
-    unique_words=len(set(words))
-    total_characters=sum(len(word) for word in words)
-    average_word_length=total_characters/total_words
-
-    word_frequency={}
-    for word in words:
-        if word in word_frequency:
-            word_frequency[word]+=1
+def calculate_grade(scores):
+    grades=[]
+    for score in scores:
+        if score >=90:
+            grade="A"
+        elif score>=80:
+            grade="B"
+        elif score>=70:
+            grade="C"
+        elif score>=60:
+            grade="D"
         else:
-            word_frequency[word]=1
+            grade="F"
+        grades.append(grade)
+    return grades
+student_scores=[75,92,88,67,42,95]
+student_grades=calculate_grade(student_scores)
 
-    analysis_result={
-        "total_words":total_words,
-        "unique_words":unique_words,
-        "average_word_length":average_word_length,
-        "word_frequency":word_frequency
-    }
-    return analysis_result
-text="This is a sample txt.Itcontains some words.Sample txt is used for analysis"
-result=analyze_text(text)
-print("Total Words",result["total_words"])
-print("Unique Words",result["unique_words"])
-print("Average Word Length",result["average_word_length"])
-print("Word Frequency",result["word_frequency"])
+for i in range(len(student_scores)):
+    print("Student",i+1,"Score",student_scores[i],"Grade",student_grades[i])
