@@ -1,5 +1,6 @@
+import os
+if os.path.exists("G:/Note folder/notefile.txt"):
+    os.remove("G:/Note folder/notefile.txt")
+else:
+    print("The file does not exists")
 
-# f=open("G:/Note folder/notefile.txt","x")
-# f.write("Now the file has more content!")
-g = open("G:/Note folder/notefile.txt", "r")
-print(g.read())
