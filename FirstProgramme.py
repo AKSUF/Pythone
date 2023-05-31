@@ -1,20 +1,11 @@
-def calculate_grade(scores):
-    grades=[]
-    for score in scores:
-        if score >=90:
-            grade="A"
-        elif score>=80:
-            grade="B"
-        elif score>=70:
-            grade="C"
-        elif score>=60:
-            grade="D"
-        else:
-            grade="F"
-        grades.append(grade)
-    return grades
-student_scores=[75,92,88,67,42,95]
-student_grades=calculate_grade(student_scores)
-
-for i in range(len(student_scores)):
-    print("Student",i+1,"Score",student_scores[i],"Grade",student_grades[i])
+def fibonacci(n):
+    fib_series=[0,1]
+    for i in range(2,n):
+        next_term=fib_series[i-1]+fib_series[i-2]
+        fib_series.append(next_term)
+    return fib_series
+num_terms=10
+fibonacci_series=fibonacci(num_terms)
+print("Fibonacci series up to",num_terms,"terms:")
+for term in fibonacci_series:
+    print(term)
