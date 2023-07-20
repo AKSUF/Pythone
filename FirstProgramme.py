@@ -1,6 +1,13 @@
-import os
-if os.path.exists("G:/Note folder/notefile.txt"):
-    os.remove("G:/Note folder/notefile.txt")
-else:
-    print("The file does not exists")
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="",
+  database="python"
+)
+mycursor = mydb.cursor()
+sql="DROP TABLE IF EXISTS customer"
+mycursor.execute(sql)
+
 
