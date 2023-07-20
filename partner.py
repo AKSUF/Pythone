@@ -1,20 +1,15 @@
-import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
-from sklearn import linear_model
-file_path=r'G:\File store\Book1.csv'
-df=pd.read_csv(file_path)
-print(df)
-plt.xlabel('area')
-plt.ylabel('price')
-plt.scatter(df.area,df.price,color='red',marker='+')
-reg=linear_model.LinearRegression()
-reg.fit(df[['area']],df.price)
-print("Coeffcient(Slopes):",reg.coef_)
-print(("Interect",reg.intercept_))
-plt.plot(df.area,reg.predict(df[['area']]),color='blue')
+import numpy as np
 
-new_area=[[3300]]
-predicted_price=reg.predict(new_area)
-print("Predicted Price for 3300 sq.ft area",predicted_price[0])
+dev_x=[25,26,27,28,29,30,31,32,33,34,35]
+dev_y=[45331,75332,95333,75334,65335,75336,85337,75338,35339,25340,75341]
+plt.plot(dev_x,dev_y,'k--',label="All Devs")
+
+py_dev_x=[25,26,27,28,29,30,31,32,33,34,35]
+py_dev_y=[456541,456542,456543,456544,456545,456546,456547,456548,456549,456550,456551]
+plt.plot(dev_x,py_dev_y,'k--',label="Python")
+plt.xlabel("Ages")
+plt.ylabel("Median Salary (USD)")
+plt.title('Media Salary (USD) by Age')
+plt.legend(["All Dev's","Python"])
 plt.show()
