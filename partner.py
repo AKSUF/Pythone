@@ -1,29 +1,15 @@
 import matplotlib.pyplot as plt
-import numpy as np
-import csv
-from collections import Counter
 
-import pandas as pd
+print(plt.style.available)
+plt.style.use('_classic_test_patch')
+slices = [120, 80, 30, 20, 40]
+labels = ['Sixty', 'Forty', 'Sixty', 'Thirty', 'Java']
+explode = [0, 0, 0, 0.5, 0]
+colors = ['blue', 'red', 'yellow', 'green', 'cyan']
 
-plt.style.use('seaborn-v0_8')
-data = pd.read_csv('G:\File store\data.csv')
-ids = data['Responder_id']
-lang_responses = data['LanguagesWorkedWith']
-language_counter = Counter()
-
-for response in lang_responses:
-    language_counter.update(response.split(';'))
-
-languages = list(language_counter.keys())
-popularity = list(language_counter.values())
-
-plt.bar(languages, popularity)
-
-plt.xlabel("Most popular programming languages")
-# plt.ylabel("Popularity")
-plt.title('Most Popular Programming Languages')
-plt.xticks(rotation=90)
-# plt.tight_layout()
-# plt.savefig('diagram.png')
+plt.pie(slices, labels=labels, explode=explode, autopct='%1.1f%%', shadow=True, startangle=90, colors=colors, wedgeprops={'edgecolor': 'black'})
+plt.title("My awesome")
+plt.tight_layout()
 plt.show()
+
 
