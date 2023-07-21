@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-
+print(plt.style.available)
 dev_x = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
 x_indexes = np.arange(len(dev_x))
 width = 0.25
